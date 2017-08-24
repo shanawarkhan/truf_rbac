@@ -14,16 +14,12 @@ To initialize a project with this example, run `truffle init webpack` inside an 
 
 * Use the webpack hotloader to sense when contracts or javascript have been recompiled and rebuild the application. Contributions welcome!
 
-## Common Errors
 
-* **Error: Can't resolve '../build/contracts/MetaCoin.json'**
 
-This means you haven't compiled or migrated your contracts yet. Run `truffle compile` and `truffle migrate` first.
+DAPPSYS implementation
+1) DSauth DSRoles integrated into the contract
+2) Only creator can send coins at the moment
+3) adding protocol for assiging users and checking assigned roles based on addresses
 
-Full error:
 
-```
-ERROR in ./app/main.js
-Module not found: Error: Can't resolve '../build/contracts/MetaCoin.json' in '/Users/tim/Documents/workspace/Consensys/test3/app'
- @ ./app/main.js 11:16-59
-```
+....Another demo would be using Hiddentao role assignment model
